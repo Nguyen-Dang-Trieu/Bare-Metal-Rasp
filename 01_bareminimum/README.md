@@ -105,13 +105,13 @@ IN:
 
 ```
 
-- Ta thấy ở đây có 3 dòng lệnh `ASM` lặp đi lặp lai:
+- Ta thấy ở đây có 3 dòng lệnh `ASM` lặp đi lặp lai: (trong file Start.S)
 ~~~asm
 0x0000030c:  d503205f  wfe      
 0x00000310:  f86678a4  ldr      x4, [x5, x6, lsl #3]
 0x00000314:  b4ffffc4  cbz      x4, #0x30c
 ~~~
----> Điều này chính là `while(1)` mà ta đã viết
+
 
 
 
